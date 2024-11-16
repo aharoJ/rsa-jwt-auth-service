@@ -21,3 +21,13 @@
 ## GET Login Token 
 
 ![alt text](<z/Screenshot 2024-11-16 at 1.31.42 PM.png>)
+
+## Admin 403 Forbidden 
+
+![alt text](<z/Screenshot 2024-11-16 at 1.35.38 PM.png>)
+
+## Admin Login Token 
+![alt text](<z/Screenshot 2024-11-16 at 1.34.56 PM.png>)
+
+## Admin GET Login
+![alt text](<z/Screenshot 2024-11-16 at 1.36.21 PM.png>)
