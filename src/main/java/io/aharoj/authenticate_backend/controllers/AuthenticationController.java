@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.aharoj.authenticate_backend.models.ApplicationUser;
+import io.aharoj.authenticate_backend.models.LoginResponseDTO;
 import io.aharoj.authenticate_backend.models.RegistrationDTO;
 import io.aharoj.authenticate_backend.services.AuthenticationService;
 
@@ -31,4 +32,10 @@ public class AuthenticationController {
    * return authenticationService.registerUser("", "");
    * }
    */
+
+  @PostMapping("/login")
+  public LoginResponseDTO loginUser(@RequestBody RegistrationDTO body) {
+    return authenticationService.loginUser(body.getUsername(), body.getPassword());
+  }
+
 }
