@@ -12,6 +12,7 @@ import io.aharoj.authenticate_backend.repository.UserRepository;
 @Service
 public class UserService implements UserDetailsService {
 
+  @SuppressWarnings("unused") // is used 
   @Autowired
   private PasswordEncoder encoder;
 

@@ -18,6 +18,7 @@ public class TokenService {
   @Autowired
   private JwtEncoder jwtEncoder;
 
+  @SuppressWarnings("unused") // is used
   @Autowired
   private JwtDecoder jwtDecoder;
 
