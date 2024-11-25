@@ -22,7 +22,11 @@ public class AuthenticateBackendApplication {
   }
 
   @Bean
-  CommandLineRunner run(RoleRepository roleRepository, UserRepository userRepository, PasswordEncoder passwordEncoder) {
+  CommandLineRunner run(
+    RoleRepository roleRepository,
+    UserRepository userRepository, 
+    PasswordEncoder passwordEncoder
+  ) {
     return args -> {
 
       if (roleRepository.findByAuthority("ADMIN").isPresent()) {
